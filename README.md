@@ -65,6 +65,7 @@
 2. Clicks `Verify & Proceed` when you enter 6 digits of OTP.
 3. Clicks on `Schedule Now` button once you select the member to be vaccinated.
 4. Automatically switches to `Search By District` and fills in State and District names from the details you filled into `details.js`
+5. **The title of chrome tab shows a timer**. This timer tells you the time left in this session. Once timer shows negative, you will have to log out and log in again as ***cowin portal allows users to book only upto 15 mins once they enter OTP.*** After 15 mins, the OTP again needs to be requested and entered.
 
 ## Misc
 1. I do not intend to collect any personal information and do not intend to cause any harm to you. This extension is just another helper utility. Should you not trust this, feel free to back out and not use the extension.

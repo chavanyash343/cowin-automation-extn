@@ -39,7 +39,7 @@ const repFun = () => {
   });
   
   waitForEl(".register-btn", () => {
-    $('.register-btn').trigger('click');
+    if(!!!allow_multiple) $('.register-btn').trigger('click');
   })
 
   waitForEl("[formcontrolname=searchType]", function() {
@@ -66,6 +66,7 @@ const repFun = () => {
           }, 500);
         }, 500);
       } else {
+        $("[formcontrolname=pincode]").val(first_5_pin_digits);
         $("[formcontrolname=pincode]").on('input', (e) => {
           if(e.target.value.length===6){
             $('.pin-search-btn').trigger('click');
