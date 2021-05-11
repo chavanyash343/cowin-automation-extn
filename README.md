@@ -10,7 +10,7 @@
 2. Exctract the files.
 3. Open this url in chrome browser [chrome://extensions/](chrome://extensions/)
 4. In the second top bar on the page, click on "Load unpacked"
-5. Select the unzipped folder containing the files you edited. 
+5. Select the unzipped folder containing the files from this page. 
 6. The extension is now ready to use.
 7. Go to [https://selfregistration.cowin.gov.in/](https://selfregistration.cowin.gov.in/) directly and use the extension. 
 8. When you open the page, you should see `click to edit autofill inputs` button in red at the top of page. Click on it and fill in the data.
