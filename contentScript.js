@@ -22,7 +22,7 @@ var waitForElAgain = function(selector, callback) {
 
 const repFun = () => {
   waitForEl("[formcontrolname=mobile_number]", function() {
-    $("[formcontrolname=mobile_number]").val("940303990");
+    $("[formcontrolname=mobile_number]").val(phone_number_9_digits);
     $("[formcontrolname=mobile_number]").on('input', (e) => {
       if(e.target.value.length===10){
         $('.login-btn').trigger('click');
@@ -43,20 +43,21 @@ const repFun = () => {
   })
 
   waitForEl("[formcontrolname=searchType]", function() {
+    setTimeout(()=>$("[formcontrolname=searchType]").trigger('click'), 500);
     $("[formcontrolname=pincode]").on('input', (e) => {
       if(e.target.value.length===6){
         $('.pin-search-btn').trigger('click');
       }
     })
-  
+    
     $("[formcontrolname=searchType]").on('change', () => {
       let searchByDistrict = $("[formcontrolname=searchType]")[0].checked;
       if(searchByDistrict){
         $("[formcontrolname=state_id]").trigger('click');
-        $("span:contains(Maharashtra)").trigger('click');
+        $(`span:contains(${state_name})`).trigger('click');
         setTimeout(()=>{
           $("[formcontrolname=district_id]").trigger('click');
-          $("span:contains(Pune)").trigger('click');
+          $(`span:contains(${district_name})`).trigger('click');
           setTimeout(()=>{
             $('.pin-search-btn').trigger('click');
           }, 500);
@@ -139,6 +140,6 @@ setInterval(function(){
         current_href = location.href;
     }else{
     }
-},10);
+},100);
 
 keep_focusing();
