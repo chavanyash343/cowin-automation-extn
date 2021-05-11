@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+
+    "name": "vacc automation",
+    "description": "automatically enter phone number and click enter",
+    "version": "10",
+    "content_scripts": [
+        {
+            "matches": ["https://selfregistration.cowin.gov.in/*"],
+            "js": ["jquery.min.js" ,"contentScript.js"]
+        }
+    ]
+}
