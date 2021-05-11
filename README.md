@@ -8,11 +8,16 @@
 
 1. Download zip of these files by clicking on the green "Code" button on this page at the top side and then selecting **Download ZIP** option from the options.
 2. Exctract the files.
-3. Open the file `details.js`  and fill in the 3 details without changing any other code. Make sure you write in between the quotes. Please read the information below when you fill the data.
+3. Open this url in chrome browser [chrome://extensions/](chrome://extensions/)
+4. In the second top bar on the page, click on "Load unpacked"
+5. Select the unzipped folder containing the files you edited. 
+6. The extension is now ready to use.
+7. Go to [https://selfregistration.cowin.gov.in/](https://selfregistration.cowin.gov.in/) directly and use the extension. 
+8. When you open the page, you should see `click to edit autofill inputs` button in red at the top of page. Click on it and fill in the data.
     ```txt
-    1. phone_number_9_digits :
+    1. Mobile number :
         Enter only 9 digits, the extension will press submit button when you put 10th digit in the input box on actual website
-    2. state_name : Make sure you input correct spelling with first letter capital
+    2. Name of the state : Make sure you input correct spelling with first letter capital
             Andaman and Nicobar Islands
             Andhra Pradesh
             Arunachal Pradesh
@@ -50,21 +55,16 @@
             Uttar Pradesh
             Uttarakhand
             West Bengal
-    3. district_name : Kindly write the correct case-senstive (capital letters and small letters)
-    district name. You might want to go and check the spelling by going to portal
-    once.
+    3. District name : Kindly write the correct case-senstive (capital letters and small letters)
+    district name. You might want to go and check the spelling by going to portal once.
     ```
-4. Open this url in chrome browser [chrome://extensions/](chrome://extensions/)
-5. In the second top bar on the page, click on "Load unpacked"
-6. Select the unzipped folder containing the files you edited. 
-7. The extension is now ready to use.
-8. Go to [https://selfregistration.cowin.gov.in/](https://selfregistration.cowin.gov.in/) directly and use the extension. 
+9. To change autofill data, just click on the Red button on the top.
 
 ## What does it do?
-1. Fills in 9 digits of your phone number from the details you entered in `details.js` and clicks `Get OTP` when you enter 10th digit
+1. Fills in 9 digits of your phone number from the details you entered in autofill form and clicks `Get OTP` when you enter 10th digit
 2. Clicks `Verify & Proceed` when you enter 6 digits of OTP.
 3. Clicks on `Schedule Now` button once you select the member to be vaccinated.
-4. Automatically switches to `Search By District` and fills in State and District names from the details you filled into `details.js`
+4. Automatically switches to `Search By District` and fills in State and District names from the details you filled into autofill form.
 5. **The title of chrome tab shows a timer**. This timer tells you the time left in this session. Once timer shows negative, you will have to log out and log in again as ***cowin portal allows users to book only upto 15 mins once they enter OTP.*** After 15 mins, the OTP again needs to be requested and entered.
 
 ## Misc
