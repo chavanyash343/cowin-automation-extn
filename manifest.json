@@ -1,13 +1,16 @@
 {
     "manifest_version": 2,
 
-    "name": "vacc automation",
-    "description": "automatically enter phone number and click enter",
-    "version": "10",
+    "name": "Cowin Automation",
+    "description": "automatically fill data on cowin portal to speed up slot booking",
+    "version": "1.0",
     "content_scripts": [
         {
             "matches": ["https://selfregistration.cowin.gov.in/*"],
             "js": ["jquery.min.js" ,"contentScript.js"]
         }
-    ]
+    ],
+    "icons": {
+        "128": "icon.png"
+    }
 }

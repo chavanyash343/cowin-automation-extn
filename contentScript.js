@@ -171,8 +171,11 @@ const createForm = () => {
   allowMultipleInput.id = "allowMultiple";
   let allowMultipleInputLabel = document.createTextNode("Allow multiple members");
   let allowMultipleWarn = document.createElement('p');
+  let mobileNumberWarn = document.createElement('p');
+  mobileNumberWarn.appendChild(document.createTextNode("You will have to enter the 10th digit in the input box to proceed with automation."));
   allowMultipleWarn.appendChild(document.createTextNode("This will prevent automatic click on the Schedule Now button"));
   allowMultipleWarn.style = "color: red;"
+  mobileNumberWarn.style = "color: red;"
 
   wrapperDiv.id = "formWrapper";
   mobileInput.id = "data-mob";
@@ -193,6 +196,7 @@ const createForm = () => {
   wrapperDiv.appendChild(mobileLabel);
   wrapperDiv.appendChild(mobileInput);
   wrapperDiv.appendChild(document.createElement('br'));
+  wrapperDiv.appendChild(mobileNumberWarn);
   wrapperDiv.appendChild(document.createElement('br'));
   wrapperDiv.appendChild(document.createElement('br'));
 
@@ -210,7 +214,6 @@ const createForm = () => {
   wrapperDiv.appendChild(allowMultipleInputLabel);
   wrapperDiv.appendChild(allowMultipleInput);
   wrapperDiv.appendChild(document.createElement('br'));
-
   wrapperDiv.appendChild(allowMultipleWarn);
   wrapperDiv.appendChild(document.createElement('br'));
   wrapperDiv.appendChild(document.createElement('br'));
